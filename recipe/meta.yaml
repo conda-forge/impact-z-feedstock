@@ -1,5 +1,5 @@
 {% set name = "impact-z" %}
-{% set version = "2.7" %}
+{% set version = "2.7.1" %}
 
 {% set build = 0 %}
 # ensure mpi is defined (needed for conda-smithy recipe-lint)
@@ -16,7 +16,7 @@ package:
 
 source:
   url: https://github.com/impact-lbl/IMPACT-Z/archive/refs/tags/V{{ version }}.tar.gz
-  sha256: d597901dda94d81f0ad09594ad318b86c09595179954482ba2d77d1a5cfa2e06
+  sha256: d51bc49c79d2d1c4c6b94b1b23e167b89540d9b786de612cac9c0c852e56c970
 
 build:
   number: {{ build }}
