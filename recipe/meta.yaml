@@ -16,6 +16,7 @@ package:
 
 source:
   url: https://github.com/impact-lbl/IMPACT-Z/archive/refs/tags/V{{ version }}.tar.gz
+
   sha256: c4ac59756fd0ddc8d6e2310a9868d122c8476cf29ce94c390067be7c0c8fbfe3
 
 build:
