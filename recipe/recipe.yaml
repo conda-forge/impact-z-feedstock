@@ -63,9 +63,9 @@ requirements:
 
 tests:
   - script:
-      - which ImpactTexe
+      - which ImpactZexe
       - if: mpi != "nompi"
-        then: which ImpactTexe-mpi
+        then: which ImpactZexe-mpi
 
 about:
   homepage: https://github.com/impact-lbl/IMPACT-Z
