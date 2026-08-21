@@ -24,7 +24,7 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://github.com/impact-lbl/IMPACT-Z/archive/v${{ version }}.tar.gz
+  url: https://github.com/impact-lbl/IMPACT-Z/archive/V${{ version }}.tar.gz
   sha256: 3ec9297041a82a477840fb887124711a0a80c393edbaaf7ed135775116a6ddd2
 
 build:
