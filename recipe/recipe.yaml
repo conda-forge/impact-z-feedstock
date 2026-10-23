@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: impact-z
-  version: "2.7.8"
+  version: "2.7.9"
   build: 0
   # mpi variants get a build string so packages can depend on them explicitly:
   # `pkg * mpi_mpich_*` for mpich, `pkg * mpi_*` for any mpi, `pkg * nompi_*` for no mpi
@@ -25,7 +25,7 @@ package:
 
 source:
   url: https://github.com/impact-lbl/IMPACT-Z/archive/V${{ version }}.tar.gz
-  sha256: 2495fb70f8b5258840e55553b3259042ecf168fc4f0302cb7272ce6fcd66b0af
+  sha256: ef002768fd6e8154c431b3687f4966bc4aff148b0447a114c0f9749fce444d07
 
 build:
   number: ${{ build_number }}
