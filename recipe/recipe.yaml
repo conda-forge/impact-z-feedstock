@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: impact-z
-  version: "2.7.7"
+  version: "2.7.8"
   build: 0
   # mpi variants get a build string so packages can depend on them explicitly:
   # `pkg * mpi_mpich_*` for mpich, `pkg * mpi_*` for any mpi, `pkg * nompi_*` for no mpi
@@ -14,7 +14,7 @@ context:
   # Incrementing `build` (x1000) outranks everything from prior builds.
   #   nompi/mpich v1: 0    v3 (AVX2): 2    v4 (AVX512): 3
   #   openmpi    v1: 100   v3 (AVX2): 102  v4 (AVX512): 103
-  build_number: ${{ 1000 * build + (100 if mpi == "openmpi" else 0) + microarch_level - 1 }}
+  build_number: 0
   # gcc/clang -march= name for the microarch level (x86-64, x86-64-v3,
   # x86-64-v4); empty on non-x86_64 platforms
   build_arch: ${{ "x86-64-v" ~ microarch_level if linux and x86_64 and microarch_level > 1 else "" }}
@@ -25,7 +25,7 @@ package:
 
 source:
   url: https://github.com/impact-lbl/IMPACT-Z/archive/V${{ version }}.tar.gz
-  sha256: 3ec9297041a82a477840fb887124711a0a80c393edbaaf7ed135775116a6ddd2
+  sha256: 2495fb70f8b5258840e55553b3259042ecf168fc4f0302cb7272ce6fcd66b0af
 
 build:
   number: ${{ build_number }}
